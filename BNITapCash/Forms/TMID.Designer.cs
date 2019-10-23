@@ -40,14 +40,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.minimize = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(74, 263);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 1);
@@ -55,10 +57,10 @@
             // 
             // txtSettlementMID
             // 
-            this.txtSettlementMID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtSettlementMID.BackColor = System.Drawing.Color.White;
             this.txtSettlementMID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSettlementMID.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSettlementMID.ForeColor = System.Drawing.Color.White;
+            this.txtSettlementMID.ForeColor = System.Drawing.Color.Black;
             this.txtSettlementMID.Location = new System.Drawing.Point(121, 235);
             this.txtSettlementMID.Name = "txtSettlementMID";
             this.txtSettlementMID.Size = new System.Drawing.Size(215, 18);
@@ -79,9 +81,9 @@
             // 
             // back
             // 
-            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(78)))));
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.back.Location = new System.Drawing.Point(92, 325);
             this.back.Name = "back";
@@ -93,9 +95,9 @@
             // 
             // save
             // 
-            this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(174)))));
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.save.Location = new System.Drawing.Point(225, 325);
             this.save.Name = "save";
@@ -107,7 +109,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(74, 203);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(268, 1);
@@ -115,10 +117,10 @@
             // 
             // txtTID
             // 
-            this.txtTID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTID.BackColor = System.Drawing.Color.White;
             this.txtTID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTID.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTID.ForeColor = System.Drawing.Color.White;
+            this.txtTID.ForeColor = System.Drawing.Color.Black;
             this.txtTID.Location = new System.Drawing.Point(121, 175);
             this.txtTID.Name = "txtTID";
             this.txtTID.Size = new System.Drawing.Size(215, 18);
@@ -139,11 +141,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImage = global::BNITapCash.Properties.Resources.pelindo4;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(156, 46);
+            this.pictureBox1.Location = new System.Drawing.Point(92, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 100);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -152,7 +154,7 @@
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(378, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 24);
@@ -163,9 +165,10 @@
             // minimize
             // 
             this.minimize.AutoSize = true;
+            this.minimize.BackColor = System.Drawing.Color.White;
             this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimize.ForeColor = System.Drawing.Color.White;
+            this.minimize.ForeColor = System.Drawing.Color.Black;
             this.minimize.Location = new System.Drawing.Point(357, 11);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(21, 24);
@@ -173,13 +176,23 @@
             this.minimize.Text = "_";
             this.minimize.Click += new System.EventHandler(this.minimize_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer1;
+            this.pictureBox4.Location = new System.Drawing.Point(-188, 406);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(610, 20);
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
+            // 
             // TMID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(416, 424);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.minimize);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -199,6 +212,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +231,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label minimize;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

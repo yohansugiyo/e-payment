@@ -37,15 +37,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtVersion = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // AppName
             // 
             this.AppName.AutoSize = true;
             this.AppName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AppName.ForeColor = System.Drawing.Color.White;
-            this.AppName.Location = new System.Drawing.Point(161, 140);
+            this.AppName.ForeColor = System.Drawing.Color.Black;
+            this.AppName.Location = new System.Drawing.Point(162, 151);
             this.AppName.Name = "AppName";
             this.AppName.Size = new System.Drawing.Size(148, 31);
             this.AppName.TabIndex = 2;
@@ -54,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(9, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 13);
@@ -90,7 +94,7 @@
             // txtLabel
             // 
             this.txtLabel.AutoSize = true;
-            this.txtLabel.ForeColor = System.Drawing.Color.White;
+            this.txtLabel.ForeColor = System.Drawing.Color.Black;
             this.txtLabel.Location = new System.Drawing.Point(198, 193);
             this.txtLabel.Name = "txtLabel";
             this.txtLabel.Size = new System.Drawing.Size(42, 13);
@@ -100,9 +104,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(449, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(24, 24);
@@ -113,7 +118,7 @@
             // txtVersion
             // 
             this.txtVersion.AutoSize = true;
-            this.txtVersion.ForeColor = System.Drawing.Color.White;
+            this.txtVersion.ForeColor = System.Drawing.Color.Black;
             this.txtVersion.Location = new System.Drawing.Point(237, 193);
             this.txtVersion.Name = "txtVersion";
             this.txtVersion.Size = new System.Drawing.Size(31, 13);
@@ -123,21 +128,43 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::BNITapCash.Properties.Resources.pelindo4;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 100);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::BNITapCash.Properties.Resources.ilugroup;
+            this.pictureBox2.Location = new System.Drawing.Point(323, 28);
+            this.pictureBox2.MaximumSize = new System.Drawing.Size(100, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer;
+            this.pictureBox3.Location = new System.Drawing.Point(-211, 266);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(762, 18);
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
             // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(488, 319);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtVersion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtLabel);
@@ -153,6 +180,8 @@
             this.Text = "About";
             this.Load += new System.EventHandler(this.About_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +197,7 @@
         private System.Windows.Forms.Label txtLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label txtVersion;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

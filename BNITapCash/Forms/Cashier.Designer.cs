@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier));
-            this.logo = new System.Windows.Forms.PictureBox();
             this.LiveCamera = new System.Windows.Forms.PictureBox();
             this.PictVehicle = new System.Windows.Forms.PictureBox();
             this.PictFace = new System.Windows.Forms.PictureBox();
@@ -80,7 +79,9 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.webcam = new System.Windows.Forms.PictureBox();
             this.minimize = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictFace)).BeginInit();
@@ -98,27 +99,19 @@
             this.panel11.SuspendLayout();
             this.paymentMethod.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webcam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
-            // 
-            // logo
-            // 
-            this.logo.BackgroundImage = global::BNITapCash.Properties.Resources.stn;
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(61, 36);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(85, 78);
-            this.logo.TabIndex = 3;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // LiveCamera
             // 
             this.LiveCamera.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LiveCamera.BackgroundImage")));
             this.LiveCamera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LiveCamera.ImageLocation = "";
-            this.LiveCamera.Location = new System.Drawing.Point(1042, 552);
+            this.LiveCamera.Location = new System.Drawing.Point(0, 498);
             this.LiveCamera.Name = "LiveCamera";
-            this.LiveCamera.Size = new System.Drawing.Size(287, 180);
+            this.LiveCamera.Size = new System.Drawing.Size(350, 250);
             this.LiveCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LiveCamera.TabIndex = 2;
             this.LiveCamera.TabStop = false;
@@ -128,9 +121,9 @@
             this.PictVehicle.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
             this.PictVehicle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictVehicle.ImageLocation = "";
-            this.PictVehicle.Location = new System.Drawing.Point(1042, 305);
+            this.PictVehicle.Location = new System.Drawing.Point(0, 249);
             this.PictVehicle.Name = "PictVehicle";
-            this.PictVehicle.Size = new System.Drawing.Size(287, 180);
+            this.PictVehicle.Size = new System.Drawing.Size(350, 250);
             this.PictVehicle.TabIndex = 1;
             this.PictVehicle.TabStop = false;
             // 
@@ -139,16 +132,16 @@
             this.PictFace.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
             this.PictFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictFace.ImageLocation = "";
-            this.PictFace.Location = new System.Drawing.Point(1042, 61);
+            this.PictFace.Location = new System.Drawing.Point(0, -1);
             this.PictFace.Name = "PictFace";
-            this.PictFace.Size = new System.Drawing.Size(287, 180);
+            this.PictFace.Size = new System.Drawing.Size(350, 250);
             this.PictFace.TabIndex = 0;
             this.PictFace.TabStop = false;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(60, 343);
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(376, 343);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(922, 1);
             this.panel3.TabIndex = 9;
@@ -165,11 +158,11 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
             this.textBox3.Location = new System.Drawing.Point(74, 38);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -179,7 +172,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Location = new System.Drawing.Point(25, 66);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(378, 1);
@@ -197,11 +190,11 @@
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
+            this.textBox4.ForeColor = System.Drawing.Color.Black;
             this.textBox4.Location = new System.Drawing.Point(582, 38);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -211,7 +204,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Location = new System.Drawing.Point(533, 66);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(378, 1);
@@ -220,10 +213,11 @@
             // close
             // 
             this.close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.close.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.White;
-            this.close.Location = new System.Drawing.Point(1327, 12);
+            this.close.ForeColor = System.Drawing.Color.Black;
+            this.close.Location = new System.Drawing.Point(1335, 7);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(24, 24);
             this.close.TabIndex = 14;
@@ -243,11 +237,11 @@
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
+            this.textBox5.ForeColor = System.Drawing.Color.Black;
             this.textBox5.Location = new System.Drawing.Point(230, 117);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -257,7 +251,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Location = new System.Drawing.Point(69, 143);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(190, 1);
@@ -265,11 +259,11 @@
             // 
             // txtHour
             // 
-            this.txtHour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtHour.BackColor = System.Drawing.Color.White;
             this.txtHour.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHour.Cursor = System.Windows.Forms.Cursors.No;
             this.txtHour.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHour.ForeColor = System.Drawing.Color.White;
+            this.txtHour.ForeColor = System.Drawing.Color.Black;
             this.txtHour.Location = new System.Drawing.Point(160, 116);
             this.txtHour.Name = "txtHour";
             this.txtHour.ReadOnly = true;
@@ -288,7 +282,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Location = new System.Drawing.Point(380, 143);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(190, 1);
@@ -296,11 +290,11 @@
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox6.BackColor = System.Drawing.Color.White;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.White;
+            this.textBox6.ForeColor = System.Drawing.Color.Black;
             this.textBox6.Location = new System.Drawing.Point(535, 116);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
@@ -310,11 +304,11 @@
             // 
             // txtMinute
             // 
-            this.txtMinute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtMinute.BackColor = System.Drawing.Color.White;
             this.txtMinute.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMinute.Cursor = System.Windows.Forms.Cursors.No;
             this.txtMinute.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMinute.ForeColor = System.Drawing.Color.White;
+            this.txtMinute.ForeColor = System.Drawing.Color.Black;
             this.txtMinute.Location = new System.Drawing.Point(472, 117);
             this.txtMinute.Name = "txtMinute";
             this.txtMinute.ReadOnly = true;
@@ -323,11 +317,11 @@
             // 
             // txtSecond
             // 
-            this.txtSecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtSecond.BackColor = System.Drawing.Color.White;
             this.txtSecond.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSecond.Cursor = System.Windows.Forms.Cursors.No;
             this.txtSecond.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecond.ForeColor = System.Drawing.Color.White;
+            this.txtSecond.ForeColor = System.Drawing.Color.Black;
             this.txtSecond.Location = new System.Drawing.Point(776, 117);
             this.txtSecond.Name = "txtSecond";
             this.txtSecond.ReadOnly = true;
@@ -336,11 +330,11 @@
             // 
             // textBox8
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox8.BackColor = System.Drawing.Color.White;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.White;
+            this.textBox8.ForeColor = System.Drawing.Color.Black;
             this.textBox8.Location = new System.Drawing.Point(839, 116);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
@@ -350,7 +344,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.BackColor = System.Drawing.Color.Black;
             this.panel8.Location = new System.Drawing.Point(684, 143);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(190, 1);
@@ -368,7 +362,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.BackColor = System.Drawing.Color.Black;
             this.panel9.Location = new System.Drawing.Point(535, 240);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(378, 1);
@@ -386,11 +380,11 @@
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox7.BackColor = System.Drawing.Color.White;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.White;
+            this.textBox7.ForeColor = System.Drawing.Color.Black;
             this.textBox7.Location = new System.Drawing.Point(579, 215);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
@@ -401,11 +395,11 @@
             // 
             // textBox9
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox9.BackColor = System.Drawing.Color.White;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.White;
+            this.textBox9.ForeColor = System.Drawing.Color.Black;
             this.textBox9.Location = new System.Drawing.Point(872, 215);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
@@ -416,10 +410,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(174)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(471, 703);
+            this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(831, 691);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(111, 34);
             this.btnSave.TabIndex = 26;
@@ -429,10 +423,10 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(78)))));
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(617, 703);
+            this.btnClear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(690, 691);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(111, 34);
             this.btnClear.TabIndex = 27;
@@ -442,11 +436,11 @@
             // 
             // txtGrandTotal
             // 
-            this.txtGrandTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtGrandTotal.BackColor = System.Drawing.Color.White;
             this.txtGrandTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGrandTotal.Cursor = System.Windows.Forms.Cursors.No;
             this.txtGrandTotal.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrandTotal.ForeColor = System.Drawing.Color.White;
+            this.txtGrandTotal.ForeColor = System.Drawing.Color.Black;
             this.txtGrandTotal.Location = new System.Drawing.Point(639, 215);
             this.txtGrandTotal.Name = "txtGrandTotal";
             this.txtGrandTotal.ReadOnly = true;
@@ -460,7 +454,7 @@
             this.logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logout.BackgroundImage")));
             this.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout.Location = new System.Drawing.Point(24, 714);
+            this.logout.Location = new System.Drawing.Point(394, 695);
             this.logout.Name = "logout";
             this.logout.Size = new System.Drawing.Size(30, 30);
             this.logout.TabIndex = 29;
@@ -480,11 +474,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(66, 35);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -496,7 +490,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(18, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(378, 1);
@@ -514,11 +508,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(574, 35);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(330, 18);
@@ -529,7 +523,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(526, 61);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(378, 1);
@@ -537,6 +531,7 @@
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.comboBox1);
             this.panel10.Controls.Add(this.panel13);
@@ -547,7 +542,7 @@
             this.panel10.Controls.Add(this.panel1);
             this.panel10.Controls.Add(this.textBox1);
             this.panel10.Controls.Add(this.pictureBox1);
-            this.panel10.Location = new System.Drawing.Point(61, 140);
+            this.panel10.Location = new System.Drawing.Point(375, 144);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(923, 152);
             this.panel10.TabIndex = 30;
@@ -555,12 +550,12 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.comboBox1.BackColor = System.Drawing.Color.White;
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(66, 93);
             this.comboBox1.Name = "comboBox1";
@@ -570,7 +565,7 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.BackColor = System.Drawing.Color.Black;
             this.panel13.Location = new System.Drawing.Point(18, 126);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(378, 1);
@@ -614,17 +609,18 @@
             this.panel11.Controls.Add(this.panel4);
             this.panel11.Controls.Add(this.textBox3);
             this.panel11.Controls.Add(this.pictureBox3);
-            this.panel11.Location = new System.Drawing.Point(57, 391);
+            this.panel11.Location = new System.Drawing.Point(375, 387);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(939, 267);
             this.panel11.TabIndex = 31;
             // 
             // paymentMethod
             // 
+            this.paymentMethod.BackColor = System.Drawing.Color.White;
             this.paymentMethod.Controls.Add(this.cash);
             this.paymentMethod.Controls.Add(this.nonCash);
             this.paymentMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paymentMethod.ForeColor = System.Drawing.Color.White;
+            this.paymentMethod.ForeColor = System.Drawing.Color.Black;
             this.paymentMethod.Location = new System.Drawing.Point(25, 190);
             this.paymentMethod.Name = "paymentMethod";
             this.paymentMethod.Size = new System.Drawing.Size(379, 57);
@@ -637,7 +633,7 @@
             this.cash.AutoSize = true;
             this.cash.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cash.ForeColor = System.Drawing.Color.White;
+            this.cash.ForeColor = System.Drawing.Color.Black;
             this.cash.Location = new System.Drawing.Point(98, 22);
             this.cash.Name = "cash";
             this.cash.Size = new System.Drawing.Size(62, 22);
@@ -652,7 +648,7 @@
             this.nonCash.AutoSize = true;
             this.nonCash.Cursor = System.Windows.Forms.Cursors.Hand;
             this.nonCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nonCash.ForeColor = System.Drawing.Color.White;
+            this.nonCash.ForeColor = System.Drawing.Color.Black;
             this.nonCash.Location = new System.Drawing.Point(177, 22);
             this.nonCash.Name = "nonCash";
             this.nonCash.Size = new System.Drawing.Size(95, 22);
@@ -664,7 +660,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.BackColor = System.Drawing.Color.Black;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Location = new System.Drawing.Point(0, 179);
             this.panel12.Name = "panel12";
@@ -673,10 +669,11 @@
             // 
             // webcam
             // 
+            this.webcam.BackColor = System.Drawing.Color.White;
             this.webcam.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
             this.webcam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.webcam.ImageLocation = "";
-            this.webcam.Location = new System.Drawing.Point(834, 18);
+            this.webcam.Location = new System.Drawing.Point(1185, 3);
             this.webcam.Name = "webcam";
             this.webcam.Size = new System.Drawing.Size(94, 96);
             this.webcam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -687,42 +684,74 @@
             // minimize
             // 
             this.minimize.AutoSize = true;
+            this.minimize.BackColor = System.Drawing.Color.Transparent;
             this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimize.ForeColor = System.Drawing.Color.White;
-            this.minimize.Location = new System.Drawing.Point(1307, 9);
+            this.minimize.ForeColor = System.Drawing.Color.Black;
+            this.minimize.Location = new System.Drawing.Point(1311, 7);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(21, 24);
             this.minimize.TabIndex = 33;
             this.minimize.Text = "_";
             this.minimize.Click += new System.EventHandler(this.minimize_Click);
             // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.BackgroundImage = global::BNITapCash.Properties.Resources.logo_pelindo_gray_jpg;
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logo.Location = new System.Drawing.Point(376, 17);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(91, 68);
+            this.logo.TabIndex = 3;
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer1;
+            this.pictureBox10.Location = new System.Drawing.Point(-8, 747);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(1374, 28);
+            this.pictureBox10.TabIndex = 34;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::BNITapCash.Properties.Resources.main_header1;
+            this.pictureBox11.Location = new System.Drawing.Point(335, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(1031, 104);
+            this.pictureBox11.TabIndex = 35;
+            this.pictureBox11.TabStop = false;
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.minimize);
-            this.Controls.Add(this.webcam);
+            this.Controls.Add(this.close);
+            this.Controls.Add(this.LiveCamera);
+            this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.logout);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.close);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.logo);
-            this.Controls.Add(this.LiveCamera);
             this.Controls.Add(this.PictVehicle);
             this.Controls.Add(this.PictFace);
+            this.Controls.Add(this.webcam);
+            this.Controls.Add(this.logo);
+            this.Controls.Add(this.pictureBox11);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cashier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier";
             this.Load += new System.EventHandler(this.Cashier_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictFace)).EndInit();
@@ -743,6 +772,9 @@
             this.paymentMethod.ResumeLayout(false);
             this.paymentMethod.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webcam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -753,7 +785,6 @@
         private System.Windows.Forms.PictureBox PictFace;
         private System.Windows.Forms.PictureBox PictVehicle;
         private System.Windows.Forms.PictureBox LiveCamera;
-        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox3;
@@ -800,5 +831,8 @@
         private System.Windows.Forms.GroupBox paymentMethod;
         private System.Windows.Forms.PictureBox webcam;
         private System.Windows.Forms.Label minimize;
+        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

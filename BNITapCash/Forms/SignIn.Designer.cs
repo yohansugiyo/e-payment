@@ -44,23 +44,25 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.password = new System.Windows.Forms.PictureBox();
             this.username = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.minimize = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.password)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.username)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(99, 187);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(229, 18);
@@ -71,7 +73,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(68, 212);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -80,10 +82,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(100, 237);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(228, 18);
@@ -94,7 +96,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(68, 261);
             this.panel2.Name = "panel2";
             this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -103,10 +105,10 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(174)))));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.btnLogin.Location = new System.Drawing.Point(142, 341);
             this.btnLogin.Name = "btnLogin";
@@ -121,7 +123,7 @@
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(375, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 24);
@@ -151,13 +153,13 @@
             this.tIDSettlementMIDToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(179, 92);
             // 
             // databaseToolStripMenuItem
             // 
             this.databaseToolStripMenuItem.Image = global::BNITapCash.Properties.Resources.database;
             this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.databaseToolStripMenuItem.Text = "Database";
             this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
             // 
@@ -165,7 +167,7 @@
             // 
             this.iPv4ServerCameraToolStripMenuItem.Image = global::BNITapCash.Properties.Resources.ipaddress;
             this.iPv4ServerCameraToolStripMenuItem.Name = "iPv4ServerCameraToolStripMenuItem";
-            this.iPv4ServerCameraToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.iPv4ServerCameraToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.iPv4ServerCameraToolStripMenuItem.Text = "IPv4 Server/Camera";
             this.iPv4ServerCameraToolStripMenuItem.Click += new System.EventHandler(this.iPv4ServerCameraToolStripMenuItem_Click);
             // 
@@ -173,7 +175,7 @@
             // 
             this.tIDSettlementMIDToolStripMenuItem.Image = global::BNITapCash.Properties.Resources.id;
             this.tIDSettlementMIDToolStripMenuItem.Name = "tIDSettlementMIDToolStripMenuItem";
-            this.tIDSettlementMIDToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.tIDSettlementMIDToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.tIDSettlementMIDToolStripMenuItem.Text = "TID/Settlement MID";
             this.tIDSettlementMIDToolStripMenuItem.Click += new System.EventHandler(this.tIDSettlementMIDToolStripMenuItem_Click);
             // 
@@ -182,7 +184,7 @@
             this.aboutToolStripMenuItem.BackgroundImage = global::BNITapCash.Properties.Resources.version;
             this.aboutToolStripMenuItem.Image = global::BNITapCash.Properties.Resources.version;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.aboutToolStripMenuItem.Text = "About E-Payment";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -207,37 +209,25 @@
             this.username.TabStop = false;
             this.username.Click += new System.EventHandler(this.username_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 78);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(99, 288);
+            this.checkBox1.Location = new System.Drawing.Point(134, 281);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(120, 287);
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
+            this.textBox3.Location = new System.Drawing.Point(151, 278);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(229, 18);
+            this.textBox3.Size = new System.Drawing.Size(109, 18);
             this.textBox3.TabIndex = 10;
             this.textBox3.Text = "Remember Me";
             // 
@@ -246,7 +236,7 @@
             this.minimize.AutoSize = true;
             this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimize.ForeColor = System.Drawing.Color.White;
+            this.minimize.ForeColor = System.Drawing.Color.Black;
             this.minimize.Location = new System.Drawing.Point(351, 4);
             this.minimize.Name = "minimize";
             this.minimize.Size = new System.Drawing.Size(21, 24);
@@ -254,13 +244,34 @@
             this.minimize.Text = "_";
             this.minimize.Click += new System.EventHandler(this.minimize_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(78, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 100);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer;
+            this.pictureBox3.Location = new System.Drawing.Point(-298, 473);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(707, 22);
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(405, 493);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.minimize);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.checkBox1);
@@ -285,14 +296,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.password)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.username)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox username;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
@@ -310,6 +320,8 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tIDSettlementMIDToolStripMenuItem;
         private System.Windows.Forms.Label minimize;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

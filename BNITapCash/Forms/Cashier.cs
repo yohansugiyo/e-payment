@@ -59,18 +59,18 @@ namespace BNITapCash
             nonCash.Checked = true;
             this.helper = new TKHelper();
             //textBox4.Text = this.helper.GetCurrentDatetime();            
-            try
-            {
-                stream = new JPEGStream(liveCameraURL);
-                stream.NewFrame += stream_NewFrame;
-                stream.Start();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                MessageBox.Show("Error : Cannot Connect to Live Camera. " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                LiveCamera.Image = Properties.Resources.no_image;
-            }
+            //try
+            //{
+            //    stream = new JPEGStream(liveCameraURL);
+            //    stream.NewFrame += stream_NewFrame;
+            //    stream.Start();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    MessageBox.Show("Error : Cannot Connect to Live Camera. " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    LiveCamera.Image = Properties.Resources.no_image;
+            //}
             this.bni = new BNI(this);
             this.bni.RunMain();
             //this.StartTimer();
@@ -364,14 +364,14 @@ namespace BNITapCash
                                         textBox4.Text = this.helper.ConvertDatetime(temp_dt_out[0], temp_dt_out[1]);
 
                                         // Load Picture of face and plate number
-                                        string URL_pict_face = "http://" + Properties.Settings.Default.IPAddressServer + Properties.Resources.repo + "/" + data["gambar_face"].ToString();
-                                        PictFace.Load(URL_pict_face);
-                                        PictFace.BackgroundImageLayout = ImageLayout.Stretch;
-                                        PictFace.SizeMode = PictureBoxSizeMode.StretchImage;
-                                        string URL_pict_vehicle = "http://" + Properties.Settings.Default.IPAddressServer + Properties.Resources.repo + "/" + data["gambar_plate"].ToString();
-                                        PictVehicle.Load(URL_pict_vehicle);
-                                        PictVehicle.BackgroundImageLayout = ImageLayout.Stretch;
-                                        PictVehicle.SizeMode = PictureBoxSizeMode.StretchImage;
+                                        //string URL_pict_face = "http://" + Properties.Settings.Default.IPAddressServer + Properties.Resources.repo + "/" + data["gambar_face"].ToString();
+                                        //PictFace.Load(URL_pict_face);
+                                        //PictFace.BackgroundImageLayout = ImageLayout.Stretch;
+                                        //PictFace.SizeMode = PictureBoxSizeMode.StretchImage;
+                                        //string URL_pict_vehicle = "http://" + Properties.Settings.Default.IPAddressServer + Properties.Resources.repo + "/" + data["gambar_plate"].ToString();
+                                        //PictVehicle.Load(URL_pict_vehicle);
+                                        //PictVehicle.BackgroundImageLayout = ImageLayout.Stretch;
+                                        //PictVehicle.SizeMode = PictureBoxSizeMode.StretchImage;
 
                                         // Total Fare Process
                                         string total_fare = data["tarif_parkir"].ToString();

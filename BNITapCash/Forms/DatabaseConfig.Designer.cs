@@ -47,27 +47,30 @@
             this.save = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.minimize = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.password)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.username)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(310, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(232, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 100);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(342, 126);
             this.panel2.Name = "panel2";
             this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -76,10 +79,10 @@
             // 
             // txtDBPassword
             // 
-            this.txtDBPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtDBPassword.BackColor = System.Drawing.Color.White;
             this.txtDBPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDBPassword.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDBPassword.ForeColor = System.Drawing.Color.White;
+            this.txtDBPassword.ForeColor = System.Drawing.Color.Black;
             this.txtDBPassword.Location = new System.Drawing.Point(374, 102);
             this.txtDBPassword.Name = "txtDBPassword";
             this.txtDBPassword.Size = new System.Drawing.Size(228, 18);
@@ -100,7 +103,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(25, 127);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -109,10 +112,10 @@
             // 
             // txtDBUsername
             // 
-            this.txtDBUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtDBUsername.BackColor = System.Drawing.Color.White;
             this.txtDBUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDBUsername.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDBUsername.ForeColor = System.Drawing.Color.White;
+            this.txtDBUsername.ForeColor = System.Drawing.Color.Black;
             this.txtDBUsername.Location = new System.Drawing.Point(56, 102);
             this.txtDBUsername.Name = "txtDBUsername";
             this.txtDBUsername.Size = new System.Drawing.Size(229, 18);
@@ -133,7 +136,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(342, 67);
             this.panel3.Name = "panel3";
             this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -142,10 +145,10 @@
             // 
             // txtDBName
             // 
-            this.txtDBName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtDBName.BackColor = System.Drawing.Color.White;
             this.txtDBName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDBName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDBName.ForeColor = System.Drawing.Color.White;
+            this.txtDBName.ForeColor = System.Drawing.Color.Black;
             this.txtDBName.Location = new System.Drawing.Point(374, 43);
             this.txtDBName.Name = "txtDBName";
             this.txtDBName.Size = new System.Drawing.Size(228, 18);
@@ -166,7 +169,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Location = new System.Drawing.Point(25, 68);
             this.panel4.Name = "panel4";
             this.panel4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -175,10 +178,10 @@
             // 
             // txtDBHost
             // 
-            this.txtDBHost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtDBHost.BackColor = System.Drawing.Color.White;
             this.txtDBHost.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDBHost.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDBHost.ForeColor = System.Drawing.Color.White;
+            this.txtDBHost.ForeColor = System.Drawing.Color.Black;
             this.txtDBHost.Location = new System.Drawing.Point(56, 43);
             this.txtDBHost.Name = "txtDBHost";
             this.txtDBHost.Size = new System.Drawing.Size(229, 18);
@@ -212,9 +215,9 @@
             // 
             // back
             // 
-            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(154)))), ((int)(((byte)(68)))));
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.back.Location = new System.Drawing.Point(244, 336);
             this.back.Name = "back";
@@ -226,9 +229,9 @@
             // 
             // save
             // 
-            this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(174)))));
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.save.Location = new System.Drawing.Point(377, 336);
             this.save.Name = "save";
@@ -240,6 +243,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.txtDBHost);
             this.groupBox1.Controls.Add(this.username);
             this.groupBox1.Controls.Add(this.txtDBUsername);
@@ -252,7 +257,7 @@
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.ForeColor = System.Drawing.Color.Wheat;
+            this.groupBox1.ForeColor = System.Drawing.Color.DarkOrange;
             this.groupBox1.Location = new System.Drawing.Point(46, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(620, 169);
@@ -273,12 +278,23 @@
             this.minimize.Text = "_";
             this.minimize.Click += new System.EventHandler(this.minimize_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer1;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 407);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(725, 19);
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
+            // 
             // DatabaseConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::BNITapCash.Properties.Resources.main_small;
             this.ClientSize = new System.Drawing.Size(723, 425);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.minimize);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.back);
@@ -301,6 +317,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +343,6 @@
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label minimize;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
