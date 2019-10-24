@@ -94,16 +94,6 @@ namespace BNITapCash
             textBox2.ForeColor = Color.WhiteSmoke;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
-            {
-                Dispose();
-                System.Environment.Exit(1);
-            }
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             //Hide();
@@ -336,12 +326,17 @@ namespace BNITapCash
             tmid.Show();
         }
 
-        private void minimize_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Dispose();
+                System.Environment.Exit(1);
+            }
         }
 
-        private void minimize_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }

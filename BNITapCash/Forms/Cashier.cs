@@ -124,16 +124,6 @@ namespace BNITapCash
 
         }
 
-        private void close_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
-            {
-                Dispose();
-                System.Environment.Exit(1);
-            }
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             string feedback = this.ValidateFields();
@@ -435,7 +425,17 @@ namespace BNITapCash
             }
         }
 
-        private void minimize_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                Dispose();
+                System.Environment.Exit(1);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }

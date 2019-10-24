@@ -29,11 +29,6 @@ namespace BNITapCash.Forms
             System.Diagnostics.Process.Start(Properties.Resources.DeveloperURL);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            Dispose();
-        }
-
         private void txtVersion_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +37,11 @@ namespace BNITapCash.Forms
         private void About_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

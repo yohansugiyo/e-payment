@@ -40,7 +40,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.close = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -78,10 +77,11 @@
             this.nonCash = new System.Windows.Forms.RadioButton();
             this.panel12 = new System.Windows.Forms.Panel();
             this.webcam = new System.Windows.Forms.PictureBox();
-            this.minimize = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictFace)).BeginInit();
@@ -209,21 +209,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(378, 1);
             this.panel5.TabIndex = 8;
-            // 
-            // close
-            // 
-            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.close.BackColor = System.Drawing.Color.Transparent;
-            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close.ForeColor = System.Drawing.Color.Black;
-            this.close.Location = new System.Drawing.Point(1335, 7);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(24, 24);
-            this.close.TabIndex = 14;
-            this.close.Text = "X";
-            this.close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // pictureBox5
             // 
@@ -411,8 +396,12 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(174)))));
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(157)))));
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(157)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(831, 691);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(111, 34);
@@ -424,8 +413,12 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(78)))));
+            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(132)))), ((int)(((byte)(60)))));
+            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(132)))), ((int)(((byte)(60)))));
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(690, 691);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(111, 34);
@@ -681,20 +674,6 @@
             this.webcam.TabStop = false;
             this.webcam.Visible = false;
             // 
-            // minimize
-            // 
-            this.minimize.AutoSize = true;
-            this.minimize.BackColor = System.Drawing.Color.Transparent;
-            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimize.ForeColor = System.Drawing.Color.Black;
-            this.minimize.Location = new System.Drawing.Point(1311, 7);
-            this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(21, 24);
-            this.minimize.TabIndex = 33;
-            this.minimize.Text = "_";
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
-            // 
             // logo
             // 
             this.logo.BackColor = System.Drawing.Color.Transparent;
@@ -725,14 +704,46 @@
             this.pictureBox11.TabIndex = 35;
             this.pictureBox11.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1174, 115);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 30);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1060, 120);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 30);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "_";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.minimize);
-            this.Controls.Add(this.close);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LiveCamera);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.panel11);
@@ -776,7 +787,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -792,7 +802,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label close;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Panel panel6;
@@ -830,9 +839,10 @@
         private System.Windows.Forms.RadioButton nonCash;
         private System.Windows.Forms.GroupBox paymentMethod;
         private System.Windows.Forms.PictureBox webcam;
-        private System.Windows.Forms.Label minimize;
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

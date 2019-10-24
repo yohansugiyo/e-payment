@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.save = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,8 +47,9 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.minimize = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -85,9 +85,13 @@
             // save
             // 
             this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(174)))));
+            this.save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(157)))));
+            this.save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(157)))));
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.save.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.save.ForeColor = System.Drawing.Color.White;
             this.save.Location = new System.Drawing.Point(223, 450);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(111, 34);
@@ -99,9 +103,13 @@
             // back
             // 
             this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(154)))), ((int)(((byte)(68)))));
+            this.back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(132)))), ((int)(((byte)(60)))));
+            this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(132)))), ((int)(((byte)(60)))));
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.back.ForeColor = System.Drawing.Color.White;
             this.back.Location = new System.Drawing.Point(90, 450);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(111, 34);
@@ -109,19 +117,6 @@
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(380, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -288,19 +283,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resolusi Gambar WebCam";
             // 
-            // minimize
-            // 
-            this.minimize.AutoSize = true;
-            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimize.ForeColor = System.Drawing.Color.Black;
-            this.minimize.Location = new System.Drawing.Point(359, 7);
-            this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(21, 24);
-            this.minimize.TabIndex = 19;
-            this.minimize.Text = "_";
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
-            // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer;
@@ -310,17 +292,49 @@
             this.pictureBox6.TabIndex = 20;
             this.pictureBox6.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(378, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 30);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(340, -2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 30);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "_";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(416, 535);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.minimize);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.save);
             this.Controls.Add(this.pictureBox1);
@@ -341,7 +355,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -353,7 +366,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -366,7 +378,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label minimize;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

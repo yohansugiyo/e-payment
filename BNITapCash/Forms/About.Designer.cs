@@ -34,11 +34,11 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtVersion = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -49,11 +49,11 @@
             this.AppName.AutoSize = true;
             this.AppName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AppName.ForeColor = System.Drawing.Color.Black;
-            this.AppName.Location = new System.Drawing.Point(162, 151);
+            this.AppName.Location = new System.Drawing.Point(110, 167);
             this.AppName.Name = "AppName";
-            this.AppName.Size = new System.Drawing.Size(148, 31);
+            this.AppName.Size = new System.Drawing.Size(261, 31);
             this.AppName.TabIndex = 2;
-            this.AppName.Text = "E-Payment";
+            this.AppName.Text = "E-PASS & E-Payment";
             // 
             // label1
             // 
@@ -95,31 +95,17 @@
             // 
             this.txtLabel.AutoSize = true;
             this.txtLabel.ForeColor = System.Drawing.Color.Black;
-            this.txtLabel.Location = new System.Drawing.Point(198, 193);
+            this.txtLabel.Location = new System.Drawing.Point(198, 217);
             this.txtLabel.Name = "txtLabel";
             this.txtLabel.Size = new System.Drawing.Size(42, 13);
             this.txtLabel.TabIndex = 6;
             this.txtLabel.Text = "Version";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(449, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 24);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // txtVersion
             // 
             this.txtVersion.AutoSize = true;
             this.txtVersion.ForeColor = System.Drawing.Color.Black;
-            this.txtVersion.Location = new System.Drawing.Point(237, 193);
+            this.txtVersion.Location = new System.Drawing.Point(237, 217);
             this.txtVersion.Name = "txtVersion";
             this.txtVersion.Size = new System.Drawing.Size(31, 13);
             this.txtVersion.TabIndex = 9;
@@ -131,7 +117,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::BNITapCash.Properties.Resources.pelindo4;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(54, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(240, 100);
             this.pictureBox1.TabIndex = 1;
@@ -140,7 +126,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::BNITapCash.Properties.Resources.ilugroup;
-            this.pictureBox2.Location = new System.Drawing.Point(323, 28);
+            this.pictureBox2.Location = new System.Drawing.Point(323, 52);
             this.pictureBox2.MaximumSize = new System.Drawing.Size(100, 100);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
@@ -156,6 +142,22 @@
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(451, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 30);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,10 +165,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(488, 319);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtVersion);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.linkLabel1);
@@ -195,9 +197,9 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label txtLabel;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label txtVersion;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button1;
     }
 }
