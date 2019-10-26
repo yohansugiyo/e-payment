@@ -123,6 +123,12 @@
     <Compile Include="Forms\DatabaseConfig.Designer.cs">
       <DependentUpon>DatabaseConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\LostTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LostTicket.Designer.cs">
+      <DependentUpon>LostTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DatabaseConfig.resx">
       <DependentUpon>DatabaseConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LostTicket.resx">
+      <DependentUpon>LostTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>

@@ -666,7 +666,7 @@
             this.webcam.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
             this.webcam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.webcam.ImageLocation = "";
-            this.webcam.Location = new System.Drawing.Point(1185, 3);
+            this.webcam.Location = new System.Drawing.Point(1079, 1);
             this.webcam.Name = "webcam";
             this.webcam.Size = new System.Drawing.Size(94, 96);
             this.webcam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -679,7 +679,7 @@
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.BackgroundImage = global::BNITapCash.Properties.Resources.logo_pelindo_gray_jpg;
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(376, 17);
+            this.logo.Location = new System.Drawing.Point(355, 12);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(91, 68);
             this.logo.TabIndex = 3;
@@ -712,7 +712,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1174, 115);
+            this.button1.Location = new System.Drawing.Point(1325, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 30);
             this.button1.TabIndex = 36;
@@ -728,7 +728,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1060, 120);
+            this.button2.Location = new System.Drawing.Point(1285, 1);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 30);
             this.button2.TabIndex = 37;
