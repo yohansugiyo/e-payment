@@ -30,13 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier));
-            this.LiveCamera = new System.Windows.Forms.PictureBox();
-            this.PictVehicle = new System.Windows.Forms.PictureBox();
-            this.PictFace = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -61,122 +54,53 @@
             this.txtGrandTotal = new System.Windows.Forms.TextBox();
             this.logout = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.paymentMethod = new System.Windows.Forms.GroupBox();
             this.cash = new System.Windows.Forms.RadioButton();
             this.nonCash = new System.Windows.Forms.RadioButton();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.webcam = new System.Windows.Forms.PictureBox();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.webcam = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.LiveCamera = new System.Windows.Forms.PictureBox();
+            this.PictVehicle = new System.Windows.Forms.PictureBox();
+            this.PictFace = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictFace)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel11.SuspendLayout();
             this.paymentMethod.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.webcam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.webcam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictFace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // LiveCamera
-            // 
-            this.LiveCamera.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LiveCamera.BackgroundImage")));
-            this.LiveCamera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LiveCamera.ImageLocation = "";
-            this.LiveCamera.Location = new System.Drawing.Point(0, 498);
-            this.LiveCamera.Name = "LiveCamera";
-            this.LiveCamera.Size = new System.Drawing.Size(350, 250);
-            this.LiveCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LiveCamera.TabIndex = 2;
-            this.LiveCamera.TabStop = false;
-            // 
-            // PictVehicle
-            // 
-            this.PictVehicle.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
-            this.PictVehicle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictVehicle.ImageLocation = "";
-            this.PictVehicle.Location = new System.Drawing.Point(0, 249);
-            this.PictVehicle.Name = "PictVehicle";
-            this.PictVehicle.Size = new System.Drawing.Size(350, 250);
-            this.PictVehicle.TabIndex = 1;
-            this.PictVehicle.TabStop = false;
-            // 
-            // PictFace
-            // 
-            this.PictFace.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
-            this.PictFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictFace.ImageLocation = "";
-            this.PictFace.Location = new System.Drawing.Point(0, -1);
-            this.PictFace.Name = "PictFace";
-            this.PictFace.Size = new System.Drawing.Size(350, 250);
-            this.PictFace.TabIndex = 0;
-            this.PictFace.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(376, 343);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(922, 1);
-            this.panel3.TabIndex = 9;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(25, 21);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 42);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(74, 38);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(330, 18);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "Waktu Masuk";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(25, 66);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(378, 1);
-            this.panel4.TabIndex = 7;
             // 
             // pictureBox4
             // 
@@ -455,125 +379,6 @@
             this.logout.Click += new System.EventHandler(this.logout_Click);
             this.logout.MouseHover += new System.EventHandler(this.logout_MouseHover);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 42);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(66, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(330, 18);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "UID Card";
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(18, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 1);
-            this.panel1.TabIndex = 6;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(526, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 42);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(574, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(330, 18);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.Text = "Nomor Plat Kendaraan";
-            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(526, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 1);
-            this.panel2.TabIndex = 7;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.comboBox1);
-            this.panel10.Controls.Add(this.panel13);
-            this.panel10.Controls.Add(this.panel2);
-            this.panel10.Controls.Add(this.pictureBox9);
-            this.panel10.Controls.Add(this.textBox2);
-            this.panel10.Controls.Add(this.pictureBox2);
-            this.panel10.Controls.Add(this.panel1);
-            this.panel10.Controls.Add(this.textBox1);
-            this.panel10.Controls.Add(this.pictureBox1);
-            this.panel10.Location = new System.Drawing.Point(375, 144);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(923, 152);
-            this.panel10.TabIndex = 30;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Black;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(66, 93);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(330, 26);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Black;
-            this.panel13.Location = new System.Drawing.Point(18, 126);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(378, 1);
-            this.panel13.TabIndex = 9;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(18, 87);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(40, 42);
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -599,9 +404,6 @@
             this.panel11.Controls.Add(this.panel5);
             this.panel11.Controls.Add(this.textBox4);
             this.panel11.Controls.Add(this.pictureBox4);
-            this.panel11.Controls.Add(this.panel4);
-            this.panel11.Controls.Add(this.textBox3);
-            this.panel11.Controls.Add(this.pictureBox3);
             this.panel11.Location = new System.Drawing.Point(375, 387);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(939, 267);
@@ -660,32 +462,6 @@
             this.panel12.Size = new System.Drawing.Size(937, 1);
             this.panel12.TabIndex = 1;
             // 
-            // webcam
-            // 
-            this.webcam.BackColor = System.Drawing.Color.White;
-            this.webcam.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
-            this.webcam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.webcam.ImageLocation = "";
-            this.webcam.Location = new System.Drawing.Point(1079, 1);
-            this.webcam.Name = "webcam";
-            this.webcam.Size = new System.Drawing.Size(94, 96);
-            this.webcam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.webcam.TabIndex = 32;
-            this.webcam.TabStop = false;
-            this.webcam.Visible = false;
-            // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.Transparent;
-            this.logo.BackgroundImage = global::BNITapCash.Properties.Resources.logo_pelindo_gray_jpg;
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(355, 12);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(91, 68);
-            this.logo.TabIndex = 3;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.logo_Click);
-            // 
             // pictureBox10
             // 
             this.pictureBox10.BackgroundImage = global::BNITapCash.Properties.Resources.main_footer1;
@@ -695,14 +471,129 @@
             this.pictureBox10.TabIndex = 34;
             this.pictureBox10.TabStop = false;
             // 
-            // pictureBox11
+            // panel4
             // 
-            this.pictureBox11.BackgroundImage = global::BNITapCash.Properties.Resources.main_header1;
-            this.pictureBox11.Location = new System.Drawing.Point(335, 0);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(1031, 104);
-            this.pictureBox11.TabIndex = 35;
-            this.pictureBox11.TabStop = false;
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(345, 270);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(378, 1);
+            this.panel4.TabIndex = 7;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(345, 225);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 42);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
+            this.textBox3.Location = new System.Drawing.Point(394, 242);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(330, 18);
+            this.textBox3.TabIndex = 11;
+            this.textBox3.Text = "Waktu Masuk";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(346, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 42);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(394, 148);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(210, 18);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "UID Card";
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // webcam
+            // 
+            this.webcam.BackColor = System.Drawing.Color.White;
+            this.webcam.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
+            this.webcam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.webcam.ImageLocation = "";
+            this.webcam.Location = new System.Drawing.Point(949, 13);
+            this.webcam.Name = "webcam";
+            this.webcam.Size = new System.Drawing.Size(73, 71);
+            this.webcam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.webcam.TabIndex = 32;
+            this.webcam.TabStop = false;
+            this.webcam.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(346, 174);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(260, 1);
+            this.panel1.TabIndex = 6;
+            // 
+            // LiveCamera
+            // 
+            this.LiveCamera.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LiveCamera.BackgroundImage")));
+            this.LiveCamera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LiveCamera.ImageLocation = "";
+            this.LiveCamera.Location = new System.Drawing.Point(35, 434);
+            this.LiveCamera.Name = "LiveCamera";
+            this.LiveCamera.Size = new System.Drawing.Size(250, 150);
+            this.LiveCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LiveCamera.TabIndex = 2;
+            this.LiveCamera.TabStop = false;
+            // 
+            // PictVehicle
+            // 
+            this.PictVehicle.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
+            this.PictVehicle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictVehicle.ImageLocation = "";
+            this.PictVehicle.Location = new System.Drawing.Point(35, 278);
+            this.PictVehicle.Name = "PictVehicle";
+            this.PictVehicle.Size = new System.Drawing.Size(250, 150);
+            this.PictVehicle.TabIndex = 1;
+            this.PictVehicle.TabStop = false;
+            // 
+            // PictFace
+            // 
+            this.PictFace.BackgroundImage = global::BNITapCash.Properties.Resources.no_image;
+            this.PictFace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictFace.ImageLocation = "";
+            this.PictFace.Location = new System.Drawing.Point(35, 122);
+            this.PictFace.Name = "PictFace";
+            this.PictFace.Size = new System.Drawing.Size(250, 150);
+            this.PictFace.TabIndex = 0;
+            this.PictFace.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(626, 135);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(40, 42);
+            this.pictureBox9.TabIndex = 10;
+            this.pictureBox9.TabStop = false;
             // 
             // button1
             // 
@@ -712,13 +603,41 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1325, 1);
+            this.button1.Location = new System.Drawing.Point(1158, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 30);
             this.button1.TabIndex = 36;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::BNITapCash.Properties.Resources.pelindo4;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Location = new System.Drawing.Point(101, 13);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(130, 68);
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Location = new System.Drawing.Point(626, 174);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(260, 1);
+            this.panel13.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(913, 135);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 42);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // button2
             // 
@@ -728,7 +647,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1285, 1);
+            this.button2.Location = new System.Drawing.Point(1118, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 30);
             this.button2.TabIndex = 37;
@@ -736,69 +655,125 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(961, 148);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(212, 18);
+            this.textBox2.TabIndex = 8;
+            this.textBox2.Text = "Nomor Plat Kendaraan";
+            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.White;
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(674, 144);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(214, 26);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(913, 174);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(260, 1);
+            this.panel2.TabIndex = 7;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.label1);
+            this.panel14.Controls.Add(this.panel2);
+            this.panel14.Controls.Add(this.comboBox1);
+            this.panel14.Controls.Add(this.textBox2);
+            this.panel14.Controls.Add(this.button2);
+            this.panel14.Controls.Add(this.pictureBox2);
+            this.panel14.Controls.Add(this.panel13);
+            this.panel14.Controls.Add(this.pictureBox11);
+            this.panel14.Controls.Add(this.button1);
+            this.panel14.Controls.Add(this.pictureBox9);
+            this.panel14.Controls.Add(this.PictFace);
+            this.panel14.Controls.Add(this.PictVehicle);
+            this.panel14.Controls.Add(this.LiveCamera);
+            this.panel14.Controls.Add(this.panel1);
+            this.panel14.Controls.Add(this.webcam);
+            this.panel14.Controls.Add(this.textBox1);
+            this.panel14.Controls.Add(this.pictureBox1);
+            this.panel14.Controls.Add(this.textBox3);
+            this.panel14.Controls.Add(this.pictureBox3);
+            this.panel14.Controls.Add(this.panel4);
+            this.panel14.Location = new System.Drawing.Point(57, 54);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1200, 600);
+            this.panel14.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(344, 206);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 13);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Waktu Masuk Kendaraan";
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.LiveCamera);
+            this.ClientSize = new System.Drawing.Size(1366, 728);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel10);
             this.Controls.Add(this.logout);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.PictVehicle);
-            this.Controls.Add(this.PictFace);
-            this.Controls.Add(this.webcam);
-            this.Controls.Add(this.logo);
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.panel14);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cashier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier";
             this.Load += new System.EventHandler(this.Cashier_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictFace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.paymentMethod.ResumeLayout(false);
             this.paymentMethod.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.webcam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.webcam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LiveCamera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictVehicle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictFace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox PictFace;
-        private System.Windows.Forms.PictureBox PictVehicle;
-        private System.Windows.Forms.PictureBox LiveCamera;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel5;
@@ -823,26 +798,32 @@
         private System.Windows.Forms.TextBox txtGrandTotal;
         private System.Windows.Forms.PictureBox logout;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.RadioButton cash;
         private System.Windows.Forms.RadioButton nonCash;
         private System.Windows.Forms.GroupBox paymentMethod;
-        private System.Windows.Forms.PictureBox webcam;
-        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox webcam;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox LiveCamera;
+        private System.Windows.Forms.PictureBox PictVehicle;
+        private System.Windows.Forms.PictureBox PictFace;
+        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label label1;
     }
 }
