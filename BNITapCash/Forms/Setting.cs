@@ -264,5 +264,11 @@ namespace BNITapCash
         {
 
         }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            home.Show();
+            Hide();
+        }
     }
 }

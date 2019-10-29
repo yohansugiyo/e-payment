@@ -57,18 +57,18 @@ namespace BNITapCash
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox2.PasswordChar = '●';
+            password.PasswordChar = '●';
         }
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Username")
+            if (username.Text == "Username")
                 this.ChangeTextListener("username");
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Password")
+            if (password.Text == "Password")
                 this.ChangeTextListener("password");
         }
 
@@ -78,20 +78,20 @@ namespace BNITapCash
             {
                 if (field == "username")
                 {
-                    textBox1.Clear();
+                    username.Clear();
                 }
                 else
                 {
-                    textBox2.Clear();
+                    password.Clear();
                 }
             }
             username.BackgroundImage = Properties.Resources.username5;
             panel1.ForeColor = Color.FromArgb(78, 184, 206);
-            textBox1.ForeColor = Color.FromArgb(78, 184, 206);
+            username.ForeColor = Color.FromArgb(78, 184, 206);
 
             password.BackgroundImage = Properties.Resources.password3;
             panel2.ForeColor = Color.WhiteSmoke;
-            textBox2.ForeColor = Color.WhiteSmoke;
+            password.ForeColor = Color.WhiteSmoke;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -110,8 +110,8 @@ namespace BNITapCash
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text.ToString();
-            string password = textBox2.Text.ToString();
+            string username = this.username.Text.ToString();
+            string password = this.password.Text.ToString();
             if (username == "" || username == "Username")
             {
                 MessageBox.Show("Username Harus Diisi.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -274,20 +274,20 @@ namespace BNITapCash
             {
                 if (Properties.Settings.Default.RememberMe == "yes")
                 {
-                    textBox1.Text = Properties.Settings.Default.Username;
-                    textBox2.Text = Properties.Settings.Default.Password;
+                    username.Text = Properties.Settings.Default.Username;
+                    password.Text = Properties.Settings.Default.Password;
                     checkBox1.Checked = true;
                 }
                 else
                 {
-                    textBox1.Text = Properties.Settings.Default.Username;
+                    username.Text = Properties.Settings.Default.Username;
                 }
             }
         }
 
         public void Clear()
         {
-            textBox2.Clear();
+            password.Clear();
             checkBox1.Checked = false;
         }
 

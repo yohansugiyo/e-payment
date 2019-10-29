@@ -36,5 +36,20 @@ namespace BNITapCash.Forms
         {
             Clear(true);
         }
+
+        public void Clear(bool include_uid = false)
+        {
+            
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

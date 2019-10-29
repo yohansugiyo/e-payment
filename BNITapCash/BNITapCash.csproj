@@ -240,10 +240,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app_icon.ico" />
+    <None Include="Resources\reprint button.png" />
+    <None Include="Resources\print report.png" />
+    <None Include="Resources\WP DISPENSER2.png" />
+    <None Include="Resources\WP DISPENSER.png" />
+    <None Include="Resources\BG BIRU.png" />
+    <None Include="Resources\BG PUTIH2.png" />
+    <None Include="Resources\BG PUTIH.png" />
+    <None Include="Resources\Group 3.png" />
+    <None Include="Resources\back button.png" />
+    <None Include="Resources\close button.png" />
+    <None Include="Resources\icon setting.png" />
     <Content Include="Resources\ilugroup.png" />
     <Content Include="Resources\login-header.png" />
     <Content Include="Resources\logo_pelindo.png" />
     <Content Include="Resources\logo_pelindo_gray.jpg.png" />
+    <None Include="Resources\missing ticket button.png" />
+    <None Include="Resources\minimize button.png" />
     <Content Include="Resources\pelindo4_logoonly.png" />
     <None Include="Resources\main-footer-short.png" />
     <Content Include="Resources\main-small.png" />
