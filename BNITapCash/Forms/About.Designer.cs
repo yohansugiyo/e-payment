@@ -38,20 +38,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.logout = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logout)).BeginInit();
             this.SuspendLayout();
             // 
             // AppName
@@ -155,13 +152,18 @@
             this.panel2.BackgroundImage = global::BNITapCash.Properties.Resources.WP_DISPENSER2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.logout);
             this.panel2.ForeColor = System.Drawing.Color.Transparent;
             this.panel2.Location = new System.Drawing.Point(4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(400, 500);
             this.panel2.TabIndex = 13;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(385, 462);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(36, 38);
+            this.panel4.TabIndex = 34;
             // 
             // panel3
             // 
@@ -183,6 +185,14 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(618, 500);
             this.panel3.TabIndex = 14;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(-1, 463);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(33, 37);
+            this.panel5.TabIndex = 33;
             // 
             // button1
             // 
@@ -218,31 +228,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(65, 447);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 28);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Back To Login";
-            // 
-            // logout
-            // 
-            this.logout.BackColor = System.Drawing.Color.Transparent;
-            this.logout.BackgroundImage = global::BNITapCash.Properties.Resources.back_button;
-            this.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout.Location = new System.Drawing.Point(22, 439);
-            this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(40, 40);
-            this.logout.TabIndex = 36;
-            this.logout.TabStop = false;
-            this.logout.Click += new System.EventHandler(this.logout_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -250,21 +235,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(36, 38);
             this.panel1.TabIndex = 33;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(385, 462);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(36, 38);
-            this.panel4.TabIndex = 34;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(-1, 463);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(33, 37);
-            this.panel5.TabIndex = 33;
             // 
             // About
             // 
@@ -289,10 +259,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logout)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,8 +277,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox logout;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel4;

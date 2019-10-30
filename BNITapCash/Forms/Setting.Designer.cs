@@ -47,6 +47,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,18 +58,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.logout = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logout)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -319,6 +315,22 @@
             this.panel5.Size = new System.Drawing.Size(618, 500);
             this.panel5.TabIndex = 23;
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(1, 463);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(33, 37);
+            this.panel8.TabIndex = 39;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(1, 1);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(33, 37);
+            this.panel7.TabIndex = 38;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -348,9 +360,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(134)))));
             this.label6.Location = new System.Drawing.Point(52, 285);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 26);
+            this.label6.Size = new System.Drawing.Size(138, 26);
             this.label6.TabIndex = 27;
-            this.label6.Text = "CCTV";
+            this.label6.Text = "IP Live Camera";
             // 
             // label5
             // 
@@ -359,9 +371,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(134)))));
             this.label5.Location = new System.Drawing.Point(52, 213);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 26);
+            this.label5.Size = new System.Drawing.Size(155, 26);
             this.label5.TabIndex = 26;
-            this.label5.Text = "PC";
+            this.label5.Text = "IP SERVER E-PASS";
             // 
             // label4
             // 
@@ -403,9 +415,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(134)))));
             this.label1.Location = new System.Drawing.Point(54, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 28);
+            this.label1.Size = new System.Drawing.Size(211, 28);
             this.label1.TabIndex = 23;
-            this.label1.Text = "IP ADDRESS";
+            this.label1.Text = "E-PASS CONFIGURATION";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel6
@@ -413,53 +425,10 @@
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = global::BNITapCash.Properties.Resources.WP_DISPENSER2;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Controls.Add(this.logout);
-            this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(4, 5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(400, 500);
             this.panel6.TabIndex = 24;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(65, 447);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 28);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Back To Login";
-            // 
-            // logout
-            // 
-            this.logout.BackColor = System.Drawing.Color.Transparent;
-            this.logout.BackgroundImage = global::BNITapCash.Properties.Resources.back_button;
-            this.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout.Location = new System.Drawing.Point(22, 439);
-            this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(40, 40);
-            this.logout.TabIndex = 36;
-            this.logout.TabStop = false;
-            this.logout.Click += new System.EventHandler(this.logout_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(1, 1);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(33, 37);
-            this.panel7.TabIndex = 38;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(1, 463);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(33, 37);
-            this.panel8.TabIndex = 39;
             // 
             // Setting
             // 
@@ -484,9 +453,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logout)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -520,8 +486,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox logout;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
     }

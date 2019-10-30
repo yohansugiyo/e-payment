@@ -9,7 +9,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="IPAddressServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">localhost</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="RememberMe" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

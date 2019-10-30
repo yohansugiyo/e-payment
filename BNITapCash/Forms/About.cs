@@ -63,7 +63,6 @@ namespace BNITapCash.Forms
             if (result == DialogResult.Yes)
             {
                 Dispose();
-                System.Environment.Exit(1);
             }
         }
 
