@@ -150,12 +150,12 @@ namespace BNITapCash
                 loading.ShowDialog(this);
 
                 // check local database connection
-                //DBConnect database = new DBConnect();
-                //if (!database.CheckMySQLConnection())
-                //{
-                //    MessageBox.Show("Error : Can't Establish Connection to Local Database.\nPlease setup properly.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    return;
-                //}
+                DBConnect database = new DBConnect();
+                if (!database.CheckMySQLConnection())
+                {
+                    MessageBox.Show("Error : Can't Establish Connection to Local Database.\nPlease setup properly.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
                 // check reader connection
                 BNI bni = new BNI();
@@ -183,78 +183,78 @@ namespace BNITapCash
                 string ip_address_server = "http://" + this.setting.IPAddressServer;
 
                 // pull some data from server e.g. Vehicle Types
-                //string APIPullData = Properties.Resources.RequestVehicleTypeAPIURL;
-                //RESTAPI pull = new RESTAPI();
-                //DataResponse receivedData = pull.API_Get(ip_address_server, APIPullData);
-                //if (receivedData != null)
-                //{
-                //    switch (receivedData.Status)
-                //    {
-                //        case 206:
-                //            JArray receivedVehicleTypes = receivedData.Data;
-                //            JObject vehicleTypes = new JObject();
-                //            vehicleTypes.Add(new JProperty("VehicleTypes", receivedVehicleTypes));
+                string APIPullData = Properties.Resources.RequestVehicleTypeAPIURL;
+                RESTAPI pull = new RESTAPI();
+                DataResponse receivedData = pull.API_Get(ip_address_server, APIPullData);
+                if (receivedData != null)
+                {
+                    switch (receivedData.Status)
+                    {
+                        case 206:
+                            JArray receivedVehicleTypes = receivedData.Data;
+                            JObject vehicleTypes = new JObject();
+                            vehicleTypes.Add(new JProperty("VehicleTypes", receivedVehicleTypes));
 
-                //            // write into a file called 'master-data.json'
-                //            try
-                //            {
-                //                string savedDir = tk.GetApplicationExecutableDirectoryName() + "\\src\\master-data.json";
-                //                string json = JsonConvert.SerializeObject(vehicleTypes);
-                //                System.IO.File.WriteAllText(@savedDir, json);
-                //                //MessageBox.Show("Pull Master Data is Success.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //            }
-                //            catch (Exception ex)
-                //            {
-                //                Console.WriteLine(ex.Message);
-                //                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //            }
-                //            break;
-                //        default:
-                //            MessageBox.Show(receivedData.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //            break;
-                //    }
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Error : Can't establish connection to server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                           // write into a file called 'master-data.json'
+                            try
+                            {
+                                string savedDir = tk.GetApplicationExecutableDirectoryName() + "\\src\\master-data.json";
+                                string json = JsonConvert.SerializeObject(vehicleTypes);
+                                System.IO.File.WriteAllText(@savedDir, json);
+                                //MessageBox.Show("Pull Master Data is Success.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message);
+                                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            break;
+                        default:
+                            MessageBox.Show(receivedData.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error : Can't establish connection to server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
                 // send data API
-                //var APIUrl = Properties.Resources.LoginAPIURL;
-                //JObject param = new JObject();
-                //param["username"] = username;
-                //param["password"] = password;
-                //var sent_param = JsonConvert.SerializeObject(param);
+                var APIUrl = Properties.Resources.LoginAPIURL;
+                JObject param = new JObject();
+                param["username"] = username;
+                param["password"] = password;
+                var sent_param = JsonConvert.SerializeObject(param);
 
-                //RESTAPI api = new RESTAPI();
-                //DataResponse response = api.API_Post(ip_address_server, APIUrl, sent_param);
-                //if (response != null)
-                //{
-                //    switch (response.Status)
-                //    {
-                //        case 201:
-                //            //MessageBox.Show(response.Message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //            try
-                //            {
+                RESTAPI api = new RESTAPI();
+                DataResponse response = api.API_Post(ip_address_server, APIUrl, sent_param);
+                if (response != null)
+                {
+                    switch (response.Status)
+                    {
+                        case 201:
+                            //MessageBox.Show(response.Message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            try
+                            {
                 this.cashier = new Cashier(this);
                 this.cashier.Show();
                 Hide();
-                //            }
-                //            catch (Exception ex)
-                //            {
-                //                MessageBox.Show("Error : Can't Connect to Webcam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //                return;
-                //            }                            
-                //            break;
-                //        default:
-                //            MessageBox.Show(response.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //            break;
-                //    }
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Error : Can't establish connection to server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Error : Can't Connect to Webcam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }                            
+                            break;
+                        default:
+                            MessageBox.Show(response.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error : Can't establish connection to server.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
